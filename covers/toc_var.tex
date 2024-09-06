@@ -15,29 +15,49 @@
 \titlecontents{section}[1.5em]{\addvspace{-0.5em}}{\thecontentslabel \hspace{1em}}{}{\titlerule*{.}\contentspage}[\addvspace{0.5em}]
 \titlecontents{subsection}[3em]{}{\thecontentslabel \hspace{1em}}{}{\titlerule*{.}\contentspage}[\addvspace{0.5em}]
 
+% 6. 致謝 Acknowledgement
+\phantomsection
+\addcontentsline{toc}{chapter}{誌謝}
+\input{Sections/0.1.Acknowledgement}
+\newpage
+
 % 7 中文摘要 chinese abstract
-\addcontentsline{toc}{chapter}{中文摘要} \input{Sections/0.2.Abstract_chinese} \newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{中文摘要}
+\input{Sections/0.2.Abstract_chinese}
+\newpage
 
 % 8. 英文摘要
-\addcontentsline{toc}{chapter}{英文摘要} \input{Sections/0.3.Abstract} \newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{英文摘要}
+\input{Sections/0.3.Abstract}
+\newpage
 
 % 9. 目錄 中文版
 \renewcommand{\contentsname}{目錄} % 使用中文目錄
+\phantomsection
 \addcontentsline{toc}{chapter}{目錄}
-\tableofcontents \newpage
+\tableofcontents
+\newpage
 
 
 % 10. 圖片目錄 中文版
 \renewcommand{\figurename}{圖} % 把caption的Figure改成"圖"
 \renewcommand{\listfigurename}{圖目錄}
 \renewcommand{\numberline}[1]{圖~#1\hspace*{1em}}
-\addcontentsline{toc}{chapter}{圖目錄\vspace{0em}} \listoffigures \newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{圖目錄}
+\listoffigures
+\newpage
 
 % 11. 表格目錄 中文版, 有需要再打開
 \renewcommand{\tablename}{表} % 把caption的Table改成"表"
 \renewcommand{\listtablename}{表目錄}
 \renewcommand{\numberline}[1]{表~#1\hspace*{1em}}
-\addcontentsline{toc}{chapter}{表目錄\vspace{0em}} \listoftables \newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{表目錄}
+\listoftables
+\newpage
 
 % 把Chapter改成 第X章
 % 如果想要章節標題置中, 可在\normalfont前面加上\centering
@@ -53,6 +73,10 @@
 \titlecontents{chapter}[0em]{}{\thecontentslabel \hspace{1em}}{}{\titlerule*{.}\contentspage}[\addvspace{1em}]
 \titlecontents{section}[1.5em]{\addvspace{-0.5em}}{\thecontentslabel \hspace{1em}}{}{\titlerule*{.}\contentspage}[\addvspace{0.5em}]
 \titlecontents{subsection}[3em]{}{\thecontentslabel \hspace{1em}}{}{\titlerule*{.}\contentspage}[\addvspace{0.5em}]
+
+% 6. 致謝 Acknowledgement
+\addcontentsline{toc}{chapter}{Acknowledgement}
+\input{Sections/0.1.Acknowledgement}\newpage
 
 % 7 中文摘要 chinese abstract
 \addcontentsline{toc}{chapter}{Chinese Abstract} \input{Sections/0.2.Abstract_chinese} \newpage
