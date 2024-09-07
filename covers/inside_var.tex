@@ -15,8 +15,10 @@
   \begin{center}
 
     \begin{minipage}[t][3cm][t]{\textwidth}
-        \centering \LARGE \chineseTitle \\
-        \centering \LARGE \englishTitle \\
+        \fontsize{18}{27}\selectfont{
+            \centering \chineseTitle \\
+            \centering \englishTitle \\
+        }
     \end{minipage}
   
     \fontsize{14}{14}\selectfont{
@@ -31,9 +33,11 @@
     
     \vspace{2.5cm}
 
-    \fontsize{14}{17}\selectfont{國立陽明交通大學} ~\\
-    \fontsize{14}{17}\selectfont{\NameofDepartmentInstituteCN} ~\\  
-    \fontsize{14}{17}\selectfont{\iftoggle{iamphd}{博士論文}{碩士論文}} ~\\     
+    \fontsize{14}{21}\selectfont{
+        國立陽明交通大學 ~\\
+        \NameofDepartmentInstituteCN ~\\
+        \iftoggle{iamphd}{博士論文}{碩士論文} ~\\
+    }
 
 
 
