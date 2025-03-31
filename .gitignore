@@ -32,3 +32,17 @@ main.pdf
 *-blx.aux
 *-blx.bib
 *.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.rubbercache
+rubber.cache
+
+## Build tool directories for auxiliary files
+latexrun
+latex.out/
